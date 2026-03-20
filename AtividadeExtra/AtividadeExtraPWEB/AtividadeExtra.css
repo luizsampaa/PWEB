@@ -1,0 +1,81 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000; /* Preto Corinthians */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Usando flexbox para colocar a seção e o aside lado a lado */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.conteudo-principal {
+    width: 65%;
+    margin-right: 20px;
+}
+
+/* Estilo dos cartões (Articles) */
+.cartao {
+    background-color: #fff;
+    display: flex;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 5px solid #000;
+}
+
+.cartao img {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.texto-cartao h3 {
+    margin-top: 0;
+}
+
+.texto-cartao a {
+    color: #000;
+    font-weight: bold;
+}
+
+/* Estilo da barra lateral (Aside) */
+.barra-lateral {
+    width: 30%;
+    background-color: #111;
+    color: #fff;
+    padding: 15px;
+    height: fit-content;
+}
+
+.barra-lateral ul {
+    list-style-type: none; /* Tira as bolinhas da lista */
+    padding: 0;
+}
+
+.barra-lateral li {
+    font-size: 0.9em;
+    margin-bottom: 8px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 20px;
+}
