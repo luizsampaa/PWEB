@@ -1,0 +1,71 @@
+/* Estilos Base */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.caixa {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #333;
+    text-align: center;
+    color: white; /* Cor do texto para melhor contraste */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Esconde todos os nomes das cores */
+h2 span {
+    display: none;
+}
+
+/* --- REGRAS DAS MEDIA QUERIES (Baseado na imagem) --- */
+
+/* 1. Até 420px (Azul Petróleo) */
+@media (max-width: 420px) {
+    .caixa { background-color: #3d4346; }
+    .t-petroleo { display: block; }
+}
+
+/* 2. De 421px até 768px (Laranja) */
+@media (min-width: 421px) and (max-width: 768px) {
+    .caixa { background-color: #e67e22; }
+    .t-laranja { display: block; }
+}
+
+/* 3. De 769px até 1024px (Rosa/Magenta) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .caixa { background-color: #e91e63; }
+    .t-rosa { display: block; }
+}
+
+/* 4. De 1025px até 1080px (Vermelho) */
+@media (min-width: 1025px) and (max-width: 1080px) {
+    .caixa { background-color: #d32f2f; }
+    .t-vermelho { display: block; }
+}
+
+/* 5. De 1081px até 1366px (Roxo) */
+@media (min-width: 1081px) and (max-width: 1366px) {
+    .caixa { background-color: #673ab7; }
+    .t-roxo { display: block; }
+}
+
+/* 6. De 1367px até 1920px (Amarelo/Dourado) */
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .caixa { background-color: #f1c40f; }
+    .t-amarelo { display: block; }
+}
+
+/* 7. Maior que 1920px (Verde) */
+@media (min-width: 1921px) {
+    .caixa { background-color: #2ecc71; }
+    .t-verde { display: block; }
+}
