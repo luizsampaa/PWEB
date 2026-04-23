@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pesquisa de Cinema</title>
+    <link rel="stylesheet" href="Atividade8.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Pesquisa de Satisfação</h2>
+        <p id="contador">Entradas: 0 / 45</p>
+        
+        <form id="pesquisaForm">
+            <input type="number" id="idade" placeholder="Idade" required min="0">
+            
+            <select id="sexo" required>
+                <option value="">Selecione o Sexo</option>
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+                <option value="O">Outros</option>
+            </select>
+
+            <select id="opiniao" required>
+                <option value="">Opinião</option>
+                <option value="4">Ótimo</option>
+                <option value="3">Bom</option>
+                <option value="2">Regular</option>
+                <option value="1">Péssimo</option>
+            </select>
+
+            <button type="submit">Enviar Dados</button>
+        </form>
+
+        <div id="resultado" class="hidden">
+            <h3>Resultados:</h3>
+            <div id="stats"></div>
+        </div>
+    </div>
+    <script src="Atividade8.JS"></script>
+</body>
+</html>
